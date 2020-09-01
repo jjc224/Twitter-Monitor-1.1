@@ -1,5 +1,5 @@
-# TwitterMonitor_1.2
-Updated version of TwitterMonitor to support python API while running with Docker.
+# Twitter Monitor 1.1
+Updated version of Twitter Monitor to support python API while running with Docker.
 
 How to build and run with Dockerfile
 -------------------------------------
