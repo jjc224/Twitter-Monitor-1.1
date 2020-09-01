@@ -1,0 +1,8 @@
+Project notes
+-------------
+
+The bonus tasks haven't been sufficiently completed but can be if desired given more time (as noted, the task came to me on short notice and already had weekend commitments).
+Feel free to ask if you would like me to continue with this later on.
+
+Also, as noted in my CV, there is a project I did called VividFlow which has a Python backend and is quite immense in its scope.
+Feel free to also look into that if you wish to further evaluate ability.
