@@ -5,6 +5,8 @@
 
 import sys
 import time
+import json
+import requests
 import GetOldTweets3 as got
 
 def print_user_manual():
@@ -65,6 +67,13 @@ def main():
         get_latest_tweets(handle, tweets_list)
         # 4. Sleep for 10 min
         time.sleep(600) # 10 * 60sec
+
+    # BONUS: Convert list to json and send via simple post request
+    # tweets_json = json.dumps(tweets_list)
+    # requests.post('https:localhost:8080', json=tweets_json)
+
+
+    # Add simple POST request with 'requests'
 
 
 if __name__ == "__main__":
