@@ -1,3 +1,4 @@
+  
 #!/usr/bin/python3
 # Author:   Joshua Coleman
 # Filename: twittermonitor.py
@@ -37,23 +38,21 @@ def get_handle():
 
 def get_latest_tweets(handle, tweets_list):
     # Set criteria for tweet search with GetOldTweets3
-    tweetCriteria = got.manager.TweetCriteria().setUsername(handle)\
-                                           .setMaxTweets(5)
+    tweetCriteria = got.manager.TweetCriteria().setUsername(handle) \
+                                               .setMaxTweets(5)
     # Get tweets
     tweets = got.manager.TweetManager.getTweets(tweetCriteria)
 
     # Loop throughh new 5 tweets and add them to the list
     for tweet in tweets:
         tweet_formatted = "\n{content} - By {author} @ {time}".format(content=tweet.text, author=tweet.username, time=tweet.date)
-        # Print tweet
-        print(tweet_formatted)
-        # Append new tweet to the list
-        tweets_list.append(tweet_formatted)
+        print(tweet_formatted)               # Print tweet
+        tweets_list.append(tweet_formatted)  # Append new tweet to the list
 
 def main():
-    handle = None               # User provided as command line arg
-    latest_tweets = None        # Latest 5 Tweets
-    tweets_list = []            # List of all tweets collected during execution time for bounus task
+    handle = None         # User provided as command line arg
+    latest_tweets = None  # Latest 5 Tweets
+    tweets_list = []      # List of all tweets collected during execution time for bounus task
 
     # 1. Print program instructions
     print_user_manual()
@@ -71,7 +70,6 @@ def main():
     # BONUS: Convert list to json and send via simple post request
     # tweets_json = json.dumps(tweets_list)
     # requests.post('https:localhost:8080', json=tweets_json)
-
 
     # Add simple POST request with 'requests'
 
